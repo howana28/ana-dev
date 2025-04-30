@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;  /* Garante que a seção ocupe toda a altura da tela */
+  text-align: center;
+  padding: 0 2rem;  /* Adiciona padding para garantir que o conteúdo não fique muito apertado nas laterais */
+}
+
+.hero-content {
+  max-width: 800px; /* Define um limite de largura para o conteúdo */
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 3rem;  /* Aumenta o tamanho do título */
+  margin-bottom: 0.5rem;  /* Espaçamento abaixo do título */
+  color: #111; /* Cor do título */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #333;  /* Cor do parágrafo */
+}
+
+
+body {
+  display: flex;
+  transition: background 0.3s, color 0.3s;
+  font-family: 'DINNeuzeitGrotesk', 'AvenirLight', sans-serif;
+}
+
+body.dark {
+  background: #111;
+  color: #2c2b2b;
+}
+
+.side-nav {
+  width: 270px;
+  background: hsl(32, 61%, 83%);
+  color: #272626;
+  height: 100vh;
+  padding: 2rem 1rem 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.side-nav .logo-img img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #333232;
+}
+
+.toggle-theme {
+  margin-bottom: 2.5rem; /* empurra pra cima */
+  cursor: pointer;
+  width: 30px;
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.side-nav ul li {
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
+.side-nav ul li a {
+  color: #353333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.side-nav ul li a i {
+  font-size: 1.6rem;
+}
+
+main {
+  margin-left: 270px;
+  width: calc(100% - 270px);
+}
+
+section {
+  padding-left: 3rem;
+}
+
+.hero, .sobre, .projetos, .contato {
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero a.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.projetos-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.projeto {
+  flex: 1 1 45%;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.dark .projeto {
+  background-color: #222;
+}
+
+.contato-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; /* alinha à esquerda */
+  align-items: center;
+  padding-left: 3rem; /* mesmo padding usado no <section> */
+}
+
+.icon-contato {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon-contato:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.sobre-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.7;
+}
+
+.titulo-sobre {
+  font-family: 'DINNeuzeitGrotesk', sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;  /* Diminui o espaço abaixo do título */
+  color: #111;
+}
+
+.texto-sobre p {
+  font-family: 'AvenirLight', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;  /* Diminui o espaço entre os parágrafos */
+}
+
+body.dark .texto-sobre p {
+  color: #ccc;
+}
+
+.texto-sobre strong {
+  font-weight: bold;
+  color: #000;
+}
+
+body.dark .texto-sobre strong {
+  color: #fff;
+}
+
+.texto-sobre em {
+  font-style: italic;
+  color: #555;
+}
+
+body.dark .texto-sobre em {
+  color: #aaa;
+}
+
+/* Remove estilo padrão dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilo quando o mouse passa por cima */
+a:hover {
+  color: #ff9900; /* ou qualquer outra cor de destaque que combine com seu layout */
+  text-decoration: underline; /* opcional: para dar um efeito de destaque */
+  transition: color 0.3s ease;
+}
+
+.contato-lista {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.icon-contato {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icon-contato:hover {
+  transform: scale(1.1);
+}

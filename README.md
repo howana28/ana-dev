@@ -2,20 +2,23 @@
 
 Este é meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript, apresentando meus projetos como desenvolvedora full stack, dashboards com Power BI e soluções em tecnologia.
 
-🔗 Veja online: [https://seuusuario.github.io/portfolio-ana-carolina](https://seuusuario.github.io/portfolio-ana-carolina)
-
-## Tecnologias
-
+## 🛠 Tecnologias utilizadas
 - HTML5
 - CSS3
-- JavaScript (básico)
-- Font Awesome
+- JavaScript
+- Font Awesome (ícones)
+- Layout responsivo
 
-## Contato
+## 📁 Estrutura do projeto
 
-📧 howanacarolina@gmail.com
-📱 [WhatsApp](https://wa.me/5511978767182)  
-🔗 [LinkedIn](https://www.linkedin.com/in/ana-carolina-mendes-de-souza)
+ projeto/ ├── index.html ├── style.css ├── script.js ├── images/ │ ├── whatsapp.png │ ├── linkedin.png ├── projetos/ │ └── fullstack.html
+
+ 
+## 📞 Contato
+
+- <img src="images/whatsapp.png" alt="WhatsApp" width="20" /> [WhatsApp](https://wa.me/5511978767182)
+- <img src="images/linkedin.png" alt="LinkedIn" width="20" /> [LinkedIn](https://www.linkedin.com/in/ana-carolina-mendes-de-souza)
+- ✉️ Email: mendesanaa17@gmail.com
 
 ---
 

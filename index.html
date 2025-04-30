@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ana Carolina Mendes de Souza</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-uWzMdNLsl7+N45Y3zQFYr+Q2smA6v4lty6LoE6B4sAbmBFlTWPH5DzvNFX6e6VbZl3V2VP9S2wJzMopC9WYz3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="side-nav">
+    <div>
+      <div class="logo-img">
+        <img src="images/sua-imagem-aqui.png" alt="Foto de Ana Carolina" />
+      </div>
+      <ul>
+        <li><a href="#" class="logo">Ana Mendes</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <img src="images/modo-noturno.png" alt="Modo escuro" class="toggle-theme" onclick="toggleDarkMode()"/>
+
+  </nav>
+  <main>
+    <section class="hero fade-in">
+      <div class="hero-content">
+        <h1>Ana Carolina Mendes de Souza</h1>
+        <p>Do front ao back: Desenvolvimento Full Stack com propósito — unindo automação, análise de dados e visualização com Power BI.</p>
+        
+      </div>
+    </section>
+
+    <section class="sobre fade-in" id="sobre">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p><strong>Sou Ana Carolina Mendes de Souza</strong>, estudante de Análise e Desenvolvimento de Sistemas, apaixonada por tecnologia, arte e soluções inteligentes. Com uma base sólida em e-commerce, análise de dados e automação de processos, venho unindo criatividade, lógica e sensibilidade para desenvolver experiências digitais completas.</p>
+
+        <p>Atuo como <strong>desenvolvedora full stack</strong>, com experiência prática tanto no front-end quanto no back-end, além de projetos com Power BI e automações em Python. Também trago vivência no universo dos marketplaces, o que me permite pensar soluções não só com foco técnico, mas também estratégico e comercial.</p>
+  
+        <p>Acredito que o design não está apenas na aparência, mas em como ele <em>facilita, comunica e conecta</em>. Quero usar a tecnologia para transformar ideias em impacto — com empatia, inovação e intencionalidade.</p>
+      </div>
+    </section>
+
+    <section class="projetos fade-in" id="projetos">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projetos-grid">
+          <div class="projeto">
+            <a href="projetos/projetos-full-stack.html">
+              <h3>Projetos Full Stack</h3>
+            </a>
+            <p>Criação de uma landing page, ChatBots, Páginas Web, Jogos e etc.</p>
+          </div>
+          <div class="projeto">
+            <h3>Dashboard com Power BI</h3>
+            <p>Dashboard interativo para análise de performance de vendas em e-commerce.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      </div>
+    </section>
+
+    <section class="contato fade-in" id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Quer conversar sobre uma oportunidade ou projeto? Estou à disposição para colaborar.</p>
+    
+        <div class="contato-lista">
+          <div class="contato-item">
+            <strong>Telefone:</strong>
+            <a href="https://wa.me/5511978767182" target="_blank">
+              <img src="images/whatsapp.png" alt="WhatsApp" class="icon-contato" />
+            </a>
+          </div>
+    
+          <div class="contato-item">
+            <strong>E-mail:</strong>
+            <a href="mailto:howanacarolina@gmail.com">
+              <img src="images/email.png" alt="E-mail" class="icon-contato" />
+            </a>
+          </div>
+    
+          <div class="contato-item">
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/ana-carolina-mendes-de-souza" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn" class="icon-contato" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+    <footer>
+      <p>&copy; 2025 Ana Carolina Mendes. Todos os direitos reservados.</p>
+    </footer>
+  </main>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
